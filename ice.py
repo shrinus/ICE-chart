@@ -4,4 +4,4 @@ EQ = "AgNO3 + NaCl = AgCl + NANO3"
 
 EQ.split(" = ")
 
-print(EQ.split(" = ")[0])
+print(EQ.split(" = ")[0].split(" + "))
