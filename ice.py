@@ -16,8 +16,7 @@ def main():
         for j in EQ[i]] for i in range(2)]
 
 def newton(f, i, h = 0.0000000001):
-    while abs(f(i)) > h:
-        i -= (f(i) * h) / (f(i + h) - f(i))
+    while abs(f(i)) > h: i -= (f(i) * h) / (f(i + h) - f(i))
 
     return i
 
