@@ -2,7 +2,7 @@ from functools import reduce
 
 def main():
     EQ = input("\nWhat is the chemical equation? ex: CaCl2 = Ca2+ + 2Cl- ")
-    K = float(input("\nWHat is the equilibrium constant? "))
+    K = float(input("\nWhat is the equilibrium constant? "))
 
     EQ = [[[1, j] if j[0].isalpha() else [int(j[0]), j[1:]] \
         for j in i.split(" + ")] for i in EQ.split(" = ")]
